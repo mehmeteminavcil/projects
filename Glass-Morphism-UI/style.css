@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #006784;
+}
+
+body {
+  height: 100vh;
+  width: 100vh;
+  overflow: hidden;
+  background-color: #00dbde;
+  background: linear-gradient(252.71deg, #38fcf3 0%, #35c9f2 99.62%);
+}
+
+.container {
+  max-width: 1080px;
+  max-height: 600px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: linear-gradient(106.82deg, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.12) 99.52%);
+  border-radius: 30px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+aside {
+  height: 100%;
+  min-width: 250px;
+  -ms-flex-preferred-size: 292px;
+      flex-basis: 292px;
+  background-image: linear-gradient(106.82deg, rgba(255, 255, 255, 0.56) 0%, rgba(255, 255, 255, 0.14) 99.52%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px 10px 20px 10px;
+}
+
+aside img {
+  max-width: 82px;
+  border-radius: 50%;
+}
+
+aside .box {
+  width: 90%;
+  height: 160px;
+  background: linear-gradient(265.52deg, #35c9f2 0.9%, rgba(56, 252, 131, 0.6) 95.02%);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.user {
+  text-align: center;
+}
+
+.user .user-name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.user .user-title {
+  font-size: 14px;
+}
+
+.nav {
+  list-style: none;
+  height: 100%;
+}
+
+.nav li {
+  margin-top: 22px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.nav i {
+  text-align: center;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  font-size: 36px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#35c9f2), to(#38fc83));
+  background: linear-gradient(180deg, #35c9f2 0%, #38fc83 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main {
+  padding: 60px 10px 20px 60px;
+  width: 80%;
+}
+
+.search-bar {
+  width: 45%;
+  height: 45px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(56, 252, 131, 0.6)), color-stop(102.27%, #38fcf3));
+  background: linear-gradient(270deg, rgba(56, 252, 131, 0.6) 0%, #38fcf3 102.27%);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  font-size: 25px;
+  border-radius: 30px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  padding: 5px 10px;
+}
+
+.search-bar .search-input {
+  background: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  outline: none;
+}
+
+.search-bar button {
+  background: none;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border: none;
+}
+
+.search-bar .fa-search {
+  font-size: 25px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.search-bar .fa-search:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+::-webkit-input-placeholder {
+  font-size: 25px;
+  color: #006784;
+  font-weight: 500;
+}
+
+:-ms-input-placeholder {
+  font-size: 25px;
+  color: #006784;
+  font-weight: 500;
+}
+
+::-ms-input-placeholder {
+  font-size: 25px;
+  color: #006784;
+  font-weight: 500;
+}
+
+::placeholder {
+  font-size: 25px;
+  color: #006784;
+  font-weight: 500;
+}
+
+.apps {
+  margin: 40px 0;
+  padding: 5px 15px 10px 15px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, rgba(255, 255, 255, 0.5)), color-stop(99%, rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1%, rgba(255, 255, 255, 0.5) 99%);
+  -webkit-box-shadow: 7px 10px 9px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 10px 9px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.apps img {
+  width: 66px;
+  height: 48px;
+  margin-right: 30px;
+  border-radius: 11px;
+}
+
+.apps .app-name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.apps .app-founder {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.apps .progress-bar {
+  position: relative;
+  width: 400px;
+  max-width: 100%;
+  height: 13px;
+  background: #ececec;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.apps .progress-bar::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 13px;
+  background: linear-gradient(90.03deg, #38fc83 0.02%, #35c9f2 99.98%);
+  border-radius: 20px 0 0 20px;
+}
+
+.apps .progress-percent {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.apps:nth-child(2) .progress-bar::before {
+  width: 30%;
+}
+
+.apps:nth-child(3) .progress-bar::before {
+  width: 90%;
+}
+
+.circle {
+  position: absolute;
+  width: 631px;
+  height: 631px;
+  border-radius: 50%;
+}
+
+.b1 {
+  left: 1%;
+  top: 1%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#38fc83), to(#38fcf3));
+  background: linear-gradient(180deg, #38fc83 0%, #38fcf3 100%);
+  z-index: -10;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+}
+
+.b2 {
+  right: 5%;
+  top: 40%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#38fc83), to(#38fcf3));
+  background: linear-gradient(180deg, #38fc83 0%, #38fcf3 100%);
+  z-index: -10;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Lato:wght@300;400;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+$green: #00704a;
+$white: #fff;
+$brown: #b37c43;
+$transition: 0.5s;
+body {
+    width: 100%;
+    max-width: 1360px;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    // background: $green;
+}
+
+.header {
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 73px;
+    }
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    padding: 8px 20px;
+    position: relative;
+    &::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: $white;
+        margin: auto;
+        display: block;
+        transition: $transition;
+        opacity: 0;
+    }
+    &:hover::after {
+        opacity: 1;
+        width: 100%;
+    }
+    a {
+        font-size: 20px;
+        font-weight: 300;
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+.active-link {
+    color: $brown !important;
+    font-weight: 600 !important;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: $green;
+        margin: auto;
+        display: block;
+        transition: $transition;
+        opacity: 1;
+    }
+}
+
+
+/*   Text Box  */
+
+.text-box {
+    padding: 6% 6%;
+    width: 53%;
+    h1 {
+        font-family: "Itim", cursive;
+        font-size: 50px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 30px;
+        line-height: 60px;
+        margin-bottom: 30px;
+    }
+    .btn {
+        padding: 20px 40px;
+        border-radius: 5px;
+        border: none;
+        background-color: $green;
+        color: $white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+
+/*    Social   */
+
+.social {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: 10px;
+    a {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+/*  background  */
+
+.bg {
+    position: absolute;
+    border-radius: 50%;
+    background: $white;
+    box-shadow: 0 0 0 1000px $green;
+    z-index: -10;
+    width: 100%;
+    height: 1400px;
+    top: -40%;
+    left: -40%;
+}

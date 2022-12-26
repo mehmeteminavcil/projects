@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Css    -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>food-order-ap</title>
+</head>
+<body>
+    <div class="container">
+        <div class="app-container">
+            <header>
+                <h1>Jimmys's Diner</h1>
+                <p>The Best burgers and pizzas in town</p>
+            </header>
+            <div id="menu" class="menu">
+                <!--  Food data here  -->
+            </div>
+
+            <div id="bill-container" class="dp-none">
+                <div class="bill">
+                    <div id="bill-info" class="bill-info">
+                    <!-- Bill data here  -->
+                    </div>
+                    <button class="place-order" data-place-order="user">Place My Order</button>
+                </div>
+            </div> 
+        </div>
+
+        
+    <!--   Form   -->
+        
+        <form id="payment-form" class="form">
+            <button type="button" class="close-form-btn " data-close="form close btn" >x</button>
+            <h1>Enter card details</h1>
+            <input  class="customer-name" type="text" placeholder="Enter your name"required >
+            <input type="number" placeholder="Enter your card number" required>
+            <input type="number" placeholder="Enter CVV" required>
+            <button type="submit" class="pay-btn" data-pay="pay">Pay</button>
+        </form>
+    </div>
+
+    <!-- Js -->
+
+    <script type="module"  src="index.js"></script>
+    
+</body>
+</html>
