@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Cursed Timer ULiL";
+  src: url("assets/fonts/CursedTimerUlil-Aznm.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cursed Timer ULiL", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background-color: #8efff0;
+}
+
+.container {
+  display: flex;
+  background: #1b244a;
+  padding: 40px;
+  gap: 70px;
+  border-radius: 3px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 40px;
+}
+
+.display {
+  color: #f94f6d;
+  background-color: #000;
+  padding: 13px;
+  font-size: 90px;
+  border-radius: 5px;
+  margin: 30px 0;
+  padding-bottom: 8px;
+  width: 150px;
+  text-align: center;
+}
+
+.score-btn {
+  background: transparent;
+  border: 1px solid #9aabd8;
+  border-radius: 4px;
+  font-size: 20px;
+  color: #9aabd8;
+  padding: 6px;
+  margin: 4px;
+}
+
+.new-game-btn {
+  margin-top: 10px;
+  font-family: "Courier New", Courier, monospace;
+  padding: 8px 16px;
+  font-size: 25px;
+  background-color: #1b244a;
+  color: #9aabd8;
+  border-radius: 5px;
+  border: 1px solid #9aabd8;
+}
+
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.97);
+}
+
+.winner {
+  box-shadow: rgb(245, 188, 0) 0px 2px 8px 0px;
+}

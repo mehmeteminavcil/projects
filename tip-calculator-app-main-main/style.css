@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+:root {
+    /* ### Primary */
+    --Strong-cyan: hsl(172, 67%, 45%);
+    /* ### Neutral */
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Dark-grayish-cyan-2: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Light-grayish-cyan-2: hsl(173, 61%, 77%);
+    --input-bg: rgb(241, 241, 241);
+    --White: hsl(0, 0%, 100%);
+    --transition: .3s;
+}
+
+body {
+    background-color: var(--Light-grayish-cyan);
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 94%;
+    max-width: 920px;
+    min-width: 366px;
+    border-radius: 25px;
+    display: flex;
+    background-color: var(--White);
+    padding: 20px;
+}
+
+.section {
+    width: 50%;
+}
+
+
+/* section-one */
+
+.section-one {
+    padding: 24px 44px 30px 25px;
+}
+
+.section-one input {
+    background-color: var(--input-bg);
+    width: 100%;
+    font-size: 24px;
+    font-weight: bolder;
+    border-radius: 5px;
+    color: var(--Very-dark-cyan);
+    border: 1px solid rgb(240, 240, 240);
+    text-align: end;
+    margin-top: 8px;
+    padding: 5px 18px;
+}
+
+.section-one label {
+    color: var(--Dark-grayish-cyan);
+    font-weight: 700;
+}
+
+#bill {
+    margin-bottom: 44px;
+}
+
+.icon {
+    position: relative;
+    width: 100%;
+}
+
+.icon span {
+    position: absolute;
+    top: 23px;
+    left: 20px;
+}
+
+.tip-buttons {
+    margin-bottom: 40px;
+}
+
+.tip-buttons .tip-btn,
+.tip-buttons input {
+    width: 31%;
+    padding: 6px 13px;
+    color: white;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    font-weight: bolder;
+    transition: var(--transition);
+}
+
+.tip-buttons .tip-btn:hover {
+    background-color: var(--Light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+}
+
+.tip-buttons .tip-btn:last-child {
+    color: var(--Very-dark-cyan)!important;
+    background-color: var(--input-bg);
+}
+
+.tip-buttons input::placeholder {
+    color: var(--Dark-grayish-cyan-2);
+}
+
+.people-number-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* section-two */
+
+.section-two {
+    background-color: var(--Very-dark-cyan);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.section-two>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-two h1 {
+    color: var(--Strong-cyan);
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.tip-amount {
+    margin-bottom: 15px;
+}
+
+.section-two p {
+    color: var(--White);
+    font-weight: 700;
+}
+
+.section-two span {
+    color: var(--Light-grayish-cyan);
+    font-size: 14px;
+}
+
+.section-two button {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: var(--Very-dark-cyan);
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Strong-cyan);
+    margin-top: 120px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.section-two button:hover {
+    background-color: var(--Light-grayish-cyan-2);
+}
+
+
+/* active  */
+
+.active-btn {
+    color: var(--Very-dark-cyan)!important;
+    background-color: var(--Strong-cyan)!important;
+}
+
+#bill:focus {
+    outline: 2px solid var(--Strong-cyan);
+}
+
+#custom:focus {
+    outline: 2px solid var(--Strong-cyan);
+}
+
+#people:focus {
+    outline: 2px solid var(--Strong-cyan);
+}
+
+.error-msg {
+    color: #ff7e6b!important;
+    display: none;
+}
+
+.sh-error-msg {
+    display: block;
+    animation: shake 0.8s;
+}
+
+.error-outline {
+    outline: 2px solid #ff7e6b !important;
+    animation: shake 0.2s;
+    color: #ff7e6b!important;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0)
+    }
+    25% {
+        transform: translateX(25px);
+    }
+    50% {
+        transform: translateX(-25px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+/* media q*/
+
+@media (max-width:700px) {
+    .container {
+        display: block;
+        top: 64%;
+    }
+    .section {
+        width: 100%;
+    }
+    .section-one {
+        padding: 20px;
+    }
+    .tip-buttons .tip-btn,
+    .tip-buttons input {
+        width: 48%;
+    }
+}
+
+footer {
+    padding: 1rem;
+}

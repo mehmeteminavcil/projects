@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <main>
+        <form action="#" class="container">
+            <div class="section section-one">
+                <label>Bill</label>
+                <div class="icon">
+                    <span><img src="images/icon-dollar.svg" alt=""></span>
+                    <input id="bill" type="text" value="0">
+                </div>
+                <label>Select Tip %</label>
+                <div class="tip-buttons">
+                    <button class="btn tip-btn" value="5%">5%</button>
+                    <button class="btn tip-btn" value="10%">10%</button>
+                    <button class="btn active-btn tip-btn" value="15%">15%</button>
+                    <button class="btn tip-btn" value="25%">25%</button>
+                    <button class="btn tip-btn" value="50%">50%</button>
+                    <input class=" tip-btn" id="custom" type="text" placeholder="Custom">
+                </div>
+                <div class="people-number-text">
+                    <label>Number of People</label>
+                    <label class="error-msg ">Can't be zero</label>
+                </div>
+                <div class="icon">
+                    <span><img src="images/icon-person.svg" alt=""></span>
+                    <input id="people" class="" value="1" type="number">
+                </div>
+            </div>
+            <div class="section section-two">
+                <div class="tip-amount">
+                    <div>
+                        <p>Tip Amount</p>
+                        <span>/ person</span>
+                    </div>
+
+                    <h1 id="tip-output">$0.00</h1>
+                </div>
+                <div class="total">
+                    <div>
+                        <p>Total</p>
+                        <span>/ person</span>
+                    </div>
+                    <h1 id="total-output">$0.00</h1>
+                </div>
+                <button id="reset" type="submit">Reset</button>
+            </div>
+
+        </form>
+        <footer>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/mehmeteminavcil" target="_blank">Mehmet Emin Avcil</a>.
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>
