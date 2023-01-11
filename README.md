@@ -6,7 +6,7 @@
 - [oldagram](https://mehmeteminavcil.github.io/small-projects/oldagram/)
 - [password-generator](https://mehmeteminavcil.github.io/small-projects/password-generator/)
 - [web-page /Landing Page - Eduford](https://mehmeteminavcil.github.io/small-projects/web-page/)
-- [calculator-js-main](https://mehmeteminavcil.github.io/small-projects/calculator-js-main/)
+- [calculator-js](https://mehmeteminavcil.github.io/small-projects/calculator-js/)
 - [tip-calculator-app-main-main](https://mehmeteminavcil.github.io/small-projects/tip-calculator-app-main-main/)
 - [basic-slider](https://mehmeteminavcil.github.io/small-projects/basic-slider/)
 - [passenger-counter-app](https://mehmeteminavcil.github.io/small-projects/passenger-counter-app/)
